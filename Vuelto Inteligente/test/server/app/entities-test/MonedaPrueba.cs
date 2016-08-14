@@ -81,5 +81,14 @@ namespace VueltoInteligente.Test.Server.Application.Entities
         {
             var moneda = new Moneda(0);
         }
+
+        [TestMethod]
+        public void UnaMonedaConValorDiezEsIgualAOtraMonedaConValorDiez()
+        {
+            var moneda1 = new Moneda(10);
+            var moneda2 = new Moneda(10);
+
+            Assert.AreEqual(moneda1, moneda2);
+        }
     }
 }
