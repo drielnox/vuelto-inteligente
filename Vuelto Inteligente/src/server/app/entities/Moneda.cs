@@ -1,27 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace VueltoInteligente.Server.Application.Entities
 {
     public class Moneda
     {
-        private int v;
-
-        public Moneda(int v)
+        public Moneda(int valor)
         {
-            if (v == 0)
+            if (valor == 0)
             {
-                throw new ArgumentOutOfRangeException("v", v, "No se puede crear una moneda con valor cero.");
+                throw new ArgumentOutOfRangeException("valor", valor, "No se puede crear una moneda con valor cero.");
             }
 
-            if (v < 0)
+            if (valor < 0)
             {
-                throw new ArgumentOutOfRangeException("v", v, "No se puede crear una moneda con valor negativo.");
+                throw new ArgumentOutOfRangeException("valor", valor, "No se puede crear una moneda con valor negativo.");
             }
 
-            this.v = v;
+            Valor = valor;
         }
 
         public int Valor { get; internal set; }
@@ -35,7 +30,7 @@ namespace VueltoInteligente.Server.Application.Entities
 
             var moneda = obj as Moneda;
 
-            return v == moneda.v;
+            return Valor == moneda.Valor;
         }
     }
 }
