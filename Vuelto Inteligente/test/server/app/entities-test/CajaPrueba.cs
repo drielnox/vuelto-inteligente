@@ -69,7 +69,7 @@ namespace VueltoInteligente.Test.Server.Application.Entities
         }
 
         [TestMethod]
-        public void PuedoCrearUnaCajaYDespuesAgregarUnaMoneda()
+        public void PuedoAgregarUnaMonedaAUnaCaja()
         {
             var caja = new Caja();
             var moneda = new Moneda(10);
@@ -81,7 +81,7 @@ namespace VueltoInteligente.Test.Server.Application.Entities
         }
 
         [TestMethod]
-        public void PuedoCrearUnaCajaYDespuesAgregarVariasMonedasDelMismoValor()
+        public void PuedoAgregarVariasMonedasDelMismoValorAUnaCaja()
         {
             var caja = new Caja();
             var moneda1 = new Moneda(10);
@@ -100,7 +100,7 @@ namespace VueltoInteligente.Test.Server.Application.Entities
         }
 
         [TestMethod]
-        public void PuedoCrearUnaCajaYAgregarVariasMonedasDeDiferentesValores()
+        public void PuedoAgregarVariasMonedasDeDiferentesValoresAUnaCaja()
         {
             var caja = new Caja();
             var moneda1 = new Moneda(10);
