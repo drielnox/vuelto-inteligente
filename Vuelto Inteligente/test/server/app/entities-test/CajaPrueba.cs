@@ -67,5 +67,17 @@ namespace VueltoInteligente.Test.Server.Application.Entities
 
             Assert.IsNotNull(caja);
         }
+
+        [TestMethod]
+        public void PuedoCrearUnaCajaYDespuesAgregarUnaMoneda()
+        {
+            var caja = new Caja();
+            var moneda = new Moneda(10);
+
+            caja.AgregarMoneda(moneda);
+
+            Assert.IsNotNull(caja.ObtenerMoneda(moneda));
+            Assert.IsTrue(caja.ObtenerMonedas().Count() == 1);
+        }
     }
 }
