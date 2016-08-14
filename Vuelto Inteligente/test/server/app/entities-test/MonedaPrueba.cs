@@ -74,5 +74,12 @@ namespace VueltoInteligente.Test.Server.Application.Entities
         {
             var moneda = new Moneda(-10);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void NoSePuedaCrearUnaMonedaConValorCero()
+        {
+            var moneda = new Moneda(0);
+        }
     }
 }
