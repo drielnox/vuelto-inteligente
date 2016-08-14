@@ -98,5 +98,24 @@ namespace VueltoInteligente.Test.Server.Application.Entities
 
             Assert.IsTrue(caja.ObtenerMonedas().Count() == 3);
         }
+
+        [TestMethod]
+        public void PuedoCrearUnaCajaYAgregarVariasMonedasDeDiferentesValores()
+        {
+            var caja = new Caja();
+            var moneda1 = new Moneda(10);
+            var moneda2 = new Moneda(25);
+            var moneda3 = new Moneda(50);
+
+            caja.AgregarMoneda(moneda1);
+            caja.AgregarMoneda(moneda2);
+            caja.AgregarMoneda(moneda3);
+
+            Assert.IsNotNull(caja.ObtenerMoneda(moneda1));
+            Assert.IsNotNull(caja.ObtenerMoneda(moneda2));
+            Assert.IsNotNull(caja.ObtenerMoneda(moneda3));
+
+            Assert.IsTrue(caja.ObtenerMonedas().Count() == 3);
+        }
     }
 }
