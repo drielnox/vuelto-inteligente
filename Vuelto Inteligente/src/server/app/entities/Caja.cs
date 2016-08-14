@@ -34,5 +34,10 @@ namespace VueltoInteligente.Server.Application.Entities
         {
             return _monedas.First();
         }
+
+        public Moneda ObtenerUnaMonedaConValor(int v)
+        {
+            return _monedas.First(x => x.Valor == v);
+        }
     }
 }

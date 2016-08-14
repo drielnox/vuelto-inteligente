@@ -126,5 +126,14 @@ namespace VueltoInteligente.Test.Server.Application.Entities
 
             var moneda = caja.ExtraerUnaMoneda();
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void NoPuedoSacarUnaMonedaDeDiezDeUnaCajaSinMonedas()
+        {
+            var caja = new Caja();
+
+            var moneda = caja.ObtenerUnaMonedaConValor(10);
+        }
     }
 }

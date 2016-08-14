@@ -24,6 +24,8 @@ namespace VueltoInteligente.Server.Application.Entities
             this.v = v;
         }
 
+        public int Valor { get; internal set; }
+
         public override bool Equals(object obj)
         {
             if (obj == null)
