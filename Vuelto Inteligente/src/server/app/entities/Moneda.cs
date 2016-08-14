@@ -26,6 +26,11 @@ namespace VueltoInteligente.Server.Application.Entities
 
         public override bool Equals(object obj)
         {
+            if (obj == null)
+            {
+                return false;
+            }
+
             var moneda = obj as Moneda;
 
             return v == moneda.v;
