@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace VueltoInteligente.Server.Application.Entities
 {
@@ -27,6 +28,11 @@ namespace VueltoInteligente.Server.Application.Entities
         public IEnumerable<Moneda> ObtenerMonedas()
         {
             return _monedas;
+        }
+
+        public Moneda ExtraerUnaMoneda()
+        {
+            return _monedas.First();
         }
     }
 }

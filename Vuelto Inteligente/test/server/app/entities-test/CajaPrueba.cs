@@ -117,5 +117,14 @@ namespace VueltoInteligente.Test.Server.Application.Entities
 
             Assert.IsTrue(caja.ObtenerMonedas().Count() == 3);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void NoPuedoSacarUnaMonedaDeUnaCajaSinMonedas()
+        {
+            var caja = new Caja();
+
+            var moneda = caja.ExtraerUnaMoneda();
+        }
     }
 }
