@@ -11,6 +11,11 @@ namespace VueltoInteligente.Server.Application.Entities
 
         public Moneda(int v)
         {
+            if (v < 0)
+            {
+                throw new ArgumentOutOfRangeException("v", v, "No se puede crear una moneda con valor negativo.");
+            }
+
             this.v = v;
         }
     }

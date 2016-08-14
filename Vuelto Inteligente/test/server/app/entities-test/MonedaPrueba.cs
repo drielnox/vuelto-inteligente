@@ -23,9 +23,9 @@ namespace VueltoInteligente.Test.Server.Application.Entities
         private TestContext testContextInstance;
 
         /// <summary>
-        ///Obtiene o establece el contexto de las pruebas que proporciona
-        ///información y funcionalidad para la serie de pruebas actual.
-        ///</summary>
+        /// Obtiene o establece el contexto de las pruebas que proporciona
+        /// información y funcionalidad para la serie de pruebas actual.
+        /// </summary>
         public TestContext TestContext
         {
             get
@@ -66,6 +66,13 @@ namespace VueltoInteligente.Test.Server.Application.Entities
             var moneda = new Moneda(10);
 
             Assert.IsNotNull(moneda);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void NoSePuedeCrearUnaMonedaConValorNegativo()
+        {
+            var moneda = new Moneda(-10);
         }
     }
 }
