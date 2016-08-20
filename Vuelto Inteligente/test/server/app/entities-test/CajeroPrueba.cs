@@ -67,5 +67,17 @@ namespace VueltoInteligente.Test.Server.Application.Entities
 
             Assert.IsNotNull(cajero);
         }
+
+        [TestMethod]
+        public void PuedoCrearDosCajeroYNoIgualesEIdenticos()
+        {
+            var cajero1 = new Cajero();
+            var cajero2 = new Cajero();
+
+            Assert.IsNotNull(cajero1);
+            Assert.IsNotNull(cajero2);
+            Assert.AreNotEqual(cajero1, cajero2);
+            Assert.AreNotSame(cajero1, cajero2);
+        }
     }
 }
