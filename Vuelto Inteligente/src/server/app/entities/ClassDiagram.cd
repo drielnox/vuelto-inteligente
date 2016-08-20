@@ -3,15 +3,22 @@
   <Class Name="VueltoInteligente.Server.Application.Entities.Moneda">
     <Position X="5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Moneda.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="VueltoInteligente.Server.Application.Entities.Caja">
     <Position X="7.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAgIgAAAIAAAAAAAAAAAAAAAEAAAAAAAAAACAAA=</HashCode>
       <FileName>Caja.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VueltoInteligente.Server.Application.Entities.Cajero">
+    <Position X="4" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cajero.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
