@@ -11,6 +11,11 @@ namespace VueltoInteligente.Server.Application.Entities
 
         public Producto(string v)
         {
+            if (string.IsNullOrWhiteSpace(v))
+            {
+                throw new ArgumentException("No se puede crear un producto sin descripcion.", "v");
+            }
+
             this.v = v;
         }
     }

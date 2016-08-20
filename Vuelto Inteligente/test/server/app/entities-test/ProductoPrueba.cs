@@ -67,5 +67,12 @@ namespace VueltoInteligente.Test.Server.Application.Entities
 
             Assert.IsNotNull(producto);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void NoPuedoCrearUnProductoConDescripcionVacia()
+        {
+            var producto = new Producto(string.Empty);
+        }
     }
 }
