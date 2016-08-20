@@ -60,6 +60,7 @@
     <Compile Include="CajaPrueba.cs" />
     <Compile Include="CajeroPrueba.cs" />
     <Compile Include="MonedaPrueba.cs" />
+    <Compile Include="ProductoPrueba.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

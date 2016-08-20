@@ -43,6 +43,7 @@
     <Compile Include="Caja.cs" />
     <Compile Include="Cajero.cs" />
     <Compile Include="Moneda.cs" />
+    <Compile Include="Producto.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
